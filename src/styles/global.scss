@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --yellow: #FFE66D;
+    --brown: #957964;
+    --purple: #603140;
+    --red: #FF3131;
+}
+
+html {
+    @media (max-width: 1080px) {
+        font-size: 93.75%;
+    }
+
+    @media (max-width: 720px) {
+        font-size: 87.5%
+    }
+}
+
+body{
+    background-image: url('./../assets/background.png');
+    -webkit-font-smoothing: antialiased;
+}
+
+body, textarea, input, button, h1 {
+    font-family: 'Neucha', sans-serif;
+    font-weight: 400;
+}
+
+button {
+    cursor: pointer;
+}

@@ -1,0 +1,108 @@
+.sidebar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 18vw;
+
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        font-size: 1.5rem;
+
+        background: 0;
+    }
+
+    > div:first-child {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        min-width: 200px;
+        width: 90%;
+        height: 60%;
+        margin: 1rem auto;
+
+        background-color: var(--yellow);
+        border-radius: 109.5px;
+
+
+        h1 {
+            font-family: 'Rancho', sans-serif;
+            color: var(--purple);
+            font-size: 3.5rem;
+
+            line-height: 40px;
+
+            width: 100%;
+
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        > button {
+            background-color: #00000021;
+            padding: 8px;
+            
+            border-radius: 233px;
+
+            width: 160px;
+
+            margin-bottom: 2.5rem;
+
+            transition: 200ms background-color;
+
+            &:hover {
+                background: var(--purple);
+            }
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+
+            margin-bottom: 1rem;
+
+            button {
+                font: 1.2rem 'Poppins', sans-serif;
+
+                & + button {
+                    margin-top: 10px;
+                }
+
+            }
+
+        }
+
+    }
+
+    > div:last-child {
+        margin: auto 0;
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        button {
+            width: 89px;
+            height: 81px;
+            padding: 0;
+            &:hover {
+                filter: brightness(0.8);
+            }
+        }
+
+        > button:first-child {
+            margin-bottom: 1rem;
+        }
+    }
+
+}
+
+div.showing {
+    background: chartreuse;
+}
+
