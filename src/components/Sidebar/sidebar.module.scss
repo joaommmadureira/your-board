@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
-    width: 18vw;
+    width: 20vw;
 
     button {
         display: flex;
@@ -21,19 +21,19 @@
         justify-content: center;
         flex-direction: column;
 
-        min-width: 200px;
-        width: 90%;
+        width: 200px;
         height: 60%;
-        margin: 1rem auto;
+        min-height: 300px;
+        margin: 1.5rem auto;
 
         background-color: var(--yellow);
-        border-radius: 109.5px;
+        border-radius: 130px;
 
 
         h1 {
             font-family: 'Rancho', sans-serif;
             color: var(--purple);
-            font-size: 3.5rem;
+            font-size: 4rem;
 
             line-height: 40px;
 
@@ -68,9 +68,18 @@
 
             button {
                 font: 1.2rem 'Poppins', sans-serif;
+                padding: 10px;
+
+                border-radius: 40px;
+
+                transition: 200ms background-color;
 
                 & + button {
-                    margin-top: 10px;
+                    margin-top: 3px;
+                }
+
+                &:hover {
+                    background: var(--brown);
                 }
 
             }
@@ -81,28 +90,32 @@
 
     > div:last-child {
         margin: auto 0;
+        height: 28%;
         display: flex;
         flex-direction: column;
 
         align-items: center;
 
+        justify-content: space-between;
+
         button {
             width: 89px;
             height: 81px;
             padding: 0;
+
+            margin-bottom: 1.5rem;
+
+            // visibility: hidden;
+
+            transition: 200ms filter;
+
             &:hover {
                 filter: brightness(0.8);
             }
         }
 
-        > button:first-child {
-            margin-bottom: 1rem;
+        > button:last-child {
+            margin-bottom: 2vh;
         }
     }
-
-}
-
-div.showing {
-    background: chartreuse;
-}
-
+} 
